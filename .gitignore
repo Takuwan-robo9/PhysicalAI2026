@@ -1,0 +1,7 @@
+models/
+outputs/*.mp4
+outputs/*.tmp.mp4
+__pycache__/
+*.pyc
+report/*.pdf
+outputs/*.log

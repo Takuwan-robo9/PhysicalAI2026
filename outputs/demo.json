@@ -1,0 +1,253 @@
+{
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf",
+  "commands": [
+    {
+      "instruction": "トマトみたいな色のブロックを、空の色のお皿にのせて",
+      "scene": {
+        "blue_cube": {
+          "color": "blue",
+          "shape": "cube",
+          "on": "table"
+        },
+        "green_cylinder": {
+          "color": "green",
+          "shape": "cylinder",
+          "on": "table"
+        },
+        "red_cube": {
+          "color": "red",
+          "shape": "cube",
+          "on": "table"
+        },
+        "yellow_cube": {
+          "color": "yellow",
+          "shape": "cube",
+          "on": "table"
+        },
+        "blue_plate": {
+          "color": "blue",
+          "shape": "plate"
+        },
+        "pink_plate": {
+          "color": "pink",
+          "shape": "plate"
+        }
+      },
+      "interpretation": "トマトみたいな色=赤の立方体, 空の色=青, 赤の立方体=赤の立方体",
+      "reply": "赤のブロックを青のお皿に置きます。",
+      "raw": "{\"interpretation\": \"トマトみたいな色=赤の立方体, 空の色=青, 赤の立方体=赤の立方体\", \"reply\": \"赤のブロックを青のお皿に置きます。\", \"steps\": [{\"pick\": \"red_cube\", \"place\": \"blue_plate\"}]}",
+      "steps": [
+        {
+          "pick": "red_cube",
+          "place": "blue_plate"
+        }
+      ],
+      "notes": [],
+      "latency": 48.31051325798035,
+      "success": [
+        true
+      ]
+    },
+    {
+      "instruction": "バナナ色のブロックを、青いブロックの上に積んで",
+      "scene": {
+        "blue_cube": {
+          "color": "blue",
+          "shape": "cube",
+          "on": "table"
+        },
+        "green_cylinder": {
+          "color": "green",
+          "shape": "cylinder",
+          "on": "table"
+        },
+        "red_cube": {
+          "color": "red",
+          "shape": "cube",
+          "on": "blue_plate"
+        },
+        "yellow_cube": {
+          "color": "yellow",
+          "shape": "cube",
+          "on": "table"
+        },
+        "blue_plate": {
+          "color": "blue",
+          "shape": "plate"
+        },
+        "pink_plate": {
+          "color": "pink",
+          "shape": "plate"
+        }
+      },
+      "interpretation": "バナナ色のブロック=黄色の立方体, 青いブロック=青の立方体",
+      "reply": "黄色のブロックを青のブロックの上に積みます。",
+      "raw": "{\"interpretation\": \"バナナ色のブロック=黄色の立方体, 青いブロック=青の立方体\", \"reply\": \"黄色のブロックを青のブロックの上に積みます。\", \"steps\": [{\"pick\": \"yellow_cube\", \"place\": \"blue_cube\"}]}",
+      "steps": [
+        {
+          "pick": "yellow_cube",
+          "place": "blue_cube"
+        }
+      ],
+      "notes": [],
+      "latency": 14.061673402786255,
+      "success": [
+        true
+      ]
+    },
+    {
+      "instruction": "丸いのをピンクのお皿へ",
+      "scene": {
+        "blue_cube": {
+          "color": "blue",
+          "shape": "cube",
+          "on": "table",
+          "hidden": "yellow_cube"
+        },
+        "green_cylinder": {
+          "color": "green",
+          "shape": "cylinder",
+          "on": "table"
+        },
+        "red_cube": {
+          "color": "red",
+          "shape": "cube",
+          "on": "blue_plate"
+        },
+        "yellow_cube": {
+          "color": "yellow",
+          "shape": "cube",
+          "on": "blue_cube"
+        },
+        "blue_plate": {
+          "color": "blue",
+          "shape": "plate"
+        },
+        "pink_plate": {
+          "color": "pink",
+          "shape": "plate"
+        }
+      },
+      "interpretation": "丸いの=緑の円柱, ピンクのお皿=ピンクのお皿",
+      "reply": "緑の円柱をピンクのお皿に置きます。",
+      "raw": "{\"interpretation\": \"丸いの=緑の円柱, ピンクのお皿=ピンクのお皿\", \"reply\": \"緑の円柱をピンクのお皿に置きます。\", \"steps\": [{\"pick\": \"green_cylinder\", \"place\": \"pink_plate\"}]}",
+      "steps": [
+        {
+          "pick": "green_cylinder",
+          "place": "pink_plate"
+        }
+      ],
+      "notes": [],
+      "latency": 12.938952207565308,
+      "success": [
+        true
+      ]
+    },
+    {
+      "instruction": "ダンスして",
+      "scene": {
+        "blue_cube": {
+          "color": "blue",
+          "shape": "cube",
+          "on": "table",
+          "hidden": "yellow_cube"
+        },
+        "green_cylinder": {
+          "color": "green",
+          "shape": "cylinder",
+          "on": "pink_plate"
+        },
+        "red_cube": {
+          "color": "red",
+          "shape": "cube",
+          "on": "blue_plate"
+        },
+        "yellow_cube": {
+          "color": "yellow",
+          "shape": "cube",
+          "on": "blue_cube"
+        },
+        "blue_plate": {
+          "color": "blue",
+          "shape": "plate"
+        },
+        "pink_plate": {
+          "color": "pink",
+          "shape": "plate"
+        }
+      },
+      "interpretation": "ダンス=ピック&プレースではない",
+      "reply": "ごめんなさい、物を運ぶことしかできません。",
+      "raw": "{\"interpretation\": \"ダンス=ピック&プレースではない\", \"reply\": \"ごめんなさい、物を運ぶことしかできません。\", \"steps\": []}",
+      "steps": [],
+      "notes": [],
+      "latency": 9.927268266677856,
+      "success": []
+    },
+    {
+      "instruction": "青いブロックもピンクのお皿へ",
+      "scene": {
+        "blue_cube": {
+          "color": "blue",
+          "shape": "cube",
+          "on": "table",
+          "hidden": "yellow_cube"
+        },
+        "green_cylinder": {
+          "color": "green",
+          "shape": "cylinder",
+          "on": "pink_plate"
+        },
+        "red_cube": {
+          "color": "red",
+          "shape": "cube",
+          "on": "blue_plate"
+        },
+        "yellow_cube": {
+          "color": "yellow",
+          "shape": "cube",
+          "on": "blue_cube"
+        },
+        "blue_plate": {
+          "color": "blue",
+          "shape": "plate"
+        },
+        "pink_plate": {
+          "color": "pink",
+          "shape": "plate"
+        }
+      },
+      "interpretation": "青いブロック=青の立方体, ピンクのお皿=ピンクのお皿",
+      "reply": "青いブロックをピンクのお皿に置きます。",
+      "raw": "{\"interpretation\": \"青いブロック=青の立方体, ピンクのお皿=ピンクのお皿\", \"reply\": \"青いブロックをピンクのお皿に置きます。\", \"steps\": [{\"pick\": \"blue_cube\", \"place\": \"pink_plate\"}]}",
+      "steps": [
+        {
+          "pick": "yellow_cube",
+          "place": "table",
+          "auto": true
+        },
+        {
+          "pick": "blue_cube",
+          "place": "pink_plate"
+        }
+      ],
+      "notes": [
+        "[修正] 上のyellow_cubeを一旦テーブルに退避する手順を追加"
+      ],
+      "latency": 11.934848546981812,
+      "success": [
+        true,
+        true
+      ]
+    }
+  ],
+  "wall_time_s": 309.46761655807495,
+  "final_perception_error_mm": {
+    "red_cube": 1.4079612169841278,
+    "yellow_cube": 0.4131668719546499,
+    "green_cylinder": 0.9636200748665882,
+    "blue_cube": 0.861356837422697,
+    "blue_plate": 0.2941522376869565,
+    "pink_plate": 0.07256165006419037
+  }
+}

@@ -1,0 +1,6 @@
+mujoco>=3.1
+numpy
+opencv-python
+pillow
+llama-cpp-python>=0.3   # Windows/Mac/Linux の CPU 版ビルド済み wheel: --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu
+huggingface_hub

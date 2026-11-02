@@ -1,0 +1,474 @@
+{
+  "qwen2.5-3b-instruct-q4_k_m.gguf": {
+    "rows": [
+      {
+        "instruction": "赤いブロックを青いお皿に置いて",
+        "raw": "{\"interpretation\": \"赤いブロック=赤の立方体, 青いお皿=青のお皿\", \"reply\": \"赤いブロックを青いお皿に置きます。\", \"steps\": [{\"pick\": \"red_cube\", \"place\": \"blue_plate\"}]}",
+        "final": [
+          {
+            "pick": "red_cube",
+            "place": "blue_plate"
+          }
+        ],
+        "notes": [],
+        "raw_correct": true,
+        "final_correct": true,
+        "latency": 62.95090913772583
+      },
+      {
+        "instruction": "トマトみたいな色のブロックを、空の色のお皿にのせて",
+        "raw": "{\"interpretation\": \"トマトみたいな色=赤, 空の色=青, トマトみたいな色のブロック=赤の立方体, 空の色のお皿=青のお皿\", \"reply\": \"赤のブロックを青のお皿に置きます。\", \"steps\": [{\"pick\": \"red_cube\", \"place\": \"blue_plate\"}]}",
+        "final": [
+          {
+            "pick": "red_cube",
+            "place": "blue_plate"
+          }
+        ],
+        "notes": [],
+        "raw_correct": true,
+        "final_correct": true,
+        "latency": 20.922799348831177
+      },
+      {
+        "instruction": "バナナ色のブロックを、青い四角の上に積んで",
+        "raw": "{\"interpretation\": \"バナナ色のブロック=黄色の立方体, 青い四角=青の立方体\", \"reply\": \"黄色のブロックを青のブロックの上に積みます。\", \"steps\": [{\"pick\": \"yellow_cube\", \"place\": \"blue_cube\"}]}",
+        "final": [
+          {
+            "pick": "yellow_cube",
+            "place": "blue_cube"
+          }
+        ],
+        "notes": [],
+        "raw_correct": true,
+        "final_correct": true,
+        "latency": 15.809394598007202
+      },
+      {
+        "instruction": "丸いのをピンクのお皿へ",
+        "raw": "{\"interpretation\": \"丸いの=緑の円柱, ピンクのお皿=ピンクのお皿\", \"reply\": \"丸いブロックをピンクのお皿に置きます。\", \"steps\": [{\"pick\": \"green_cylinder\", \"place\": \"pink_plate\"}]}",
+        "final": [
+          {
+            "pick": "green_cylinder",
+            "place": "pink_plate"
+          }
+        ],
+        "notes": [],
+        "raw_correct": true,
+        "final_correct": true,
+        "latency": 15.007893800735474
+      },
+      {
+        "instruction": "四角いブロックを全部ピンクのお皿に片付けて",
+        "raw": "{\"interpretation\": \"四角いブロック=赤の立方体, 黄色の立方体, 青の立方体, pick: green_cylinder, pink_plate\", \"reply\": \"四角いブロックをピンクのお皿に置きます。\", \"steps\": [{\"pick\": \"red_cube\", \"place\": \"pink_plate\"}, {\"pick\": \"yellow_cube\", \"place\": \"pink_plate\"}, {\"pick\": \"blue_cube\", \"place\": \"pink_plate\"}]}",
+        "final": [
+          {
+            "pick": "red_cube",
+            "place": "pink_plate"
+          },
+          {
+            "pick": "yellow_cube",
+            "place": "pink_plate"
+          },
+          {
+            "pick": "blue_cube",
+            "place": "pink_plate"
+          }
+        ],
+        "notes": [],
+        "raw_correct": true,
+        "final_correct": true,
+        "latency": 23.517800092697144
+      },
+      {
+        "instruction": "青いブロックを同じ色のお皿に置いて",
+        "raw": "{\"interpretation\": \"青いブロック=青の立方体, 青のお皿=青のお皿\", \"reply\": \"青のブロックを青のお皿に置きます。\", \"steps\": [{\"pick\": \"blue_cube\", \"place\": \"blue_plate\"}]}",
+        "final": [
+          {
+            "pick": "blue_cube",
+            "place": "blue_plate"
+          }
+        ],
+        "notes": [],
+        "raw_correct": true,
+        "final_correct": true,
+        "latency": 13.584763050079346
+      },
+      {
+        "instruction": "緑のブロックの上に赤いのを重ねて",
+        "raw": "{\"interpretation\": \"緑のブロック=緑の円柱, 赤いの=赤の立方体\", \"reply\": \"緑のブロックの上に赤いブロックを積みます。\", \"steps\": [{\"pick\": \"red_cube\", \"place\": \"green_cylinder\"}]}",
+        "final": [
+          {
+            "pick": "red_cube",
+            "place": "green_cylinder"
+          }
+        ],
+        "notes": [],
+        "raw_correct": true,
+        "final_correct": true,
+        "latency": 16.044081926345825
+      },
+      {
+        "instruction": "ダンスして",
+        "raw": "{\"interpretation\": \"ダンス=ピック&プレースではない\", \"reply\": \"ごめんなさい、物を運ぶことしかできません。\", \"steps\": []}",
+        "final": [],
+        "notes": [],
+        "raw_correct": true,
+        "final_correct": true,
+        "latency": 8.79976224899292
+      },
+      {
+        "instruction": "コーヒーを入れて",
+        "raw": "{\"interpretation\": \"コーヒーを入れる=ピック&プレースではない\", \"reply\": \"ごめんなさい、物を運ぶことしかできません。\", \"steps\": []}",
+        "final": [],
+        "notes": [],
+        "raw_correct": true,
+        "final_correct": true,
+        "latency": 8.85153317451477
+      },
+      {
+        "instruction": "トマトみたいな色のブロックを、空の色のお皿にのせて",
+        "raw": "{\"interpretation\": \"トマトみたいな色=赤, 空の色=青, トマトみたいな色のブロック=赤の立方体, 空の色のお皿=青のお皿\", \"reply\": \"赤のブロックを青のお皿に置きます。\", \"steps\": [{\"pick\": \"red_cube\", \"place\": \"blue_plate\"}]}",
+        "final": [
+          {
+            "pick": "red_cube",
+            "place": "blue_plate"
+          }
+        ],
+        "notes": [],
+        "raw_correct": true,
+        "final_correct": true,
+        "latency": 23.69740390777588
+      },
+      {
+        "instruction": "丸いのをピンクのお皿へ",
+        "raw": "{\"interpretation\": \"丸いの=緑の円柱, ピンクのお皿=ピンクのお皿\", \"reply\": \"緑の円柱をピンクのお皿に置きます。\", \"steps\": [{\"pick\": \"green_cylinder\", \"place\": \"pink_plate\"}]}",
+        "final": [
+          {
+            "pick": "green_cylinder",
+            "place": "pink_plate"
+          }
+        ],
+        "notes": [],
+        "raw_correct": true,
+        "final_correct": true,
+        "latency": 14.411805868148804
+      },
+      {
+        "instruction": "丸いのをピンクのお皿へ",
+        "raw": "{\"interpretation\": \"丸いの=緑の円柱, ピンクのお皿=ピンクのお皿\", \"reply\": \"緑の円柱をピンクのお皿に置きます。\", \"steps\": [{\"pick\": \"green_cylinder\", \"place\": \"pink_plate\"}]}",
+        "final": [
+          {
+            "pick": "green_cylinder",
+            "place": "pink_plate"
+          }
+        ],
+        "notes": [],
+        "raw_correct": true,
+        "final_correct": true,
+        "latency": 19.473159313201904
+      },
+      {
+        "instruction": "青いブロックもピンクのお皿へ",
+        "raw": "{\"interpretation\": \"青いブロック=青の立方体, ピンクのお皿=ピンクのお皿\", \"reply\": \"青いブロックをピンクのお皿に置きます。\", \"steps\": [{\"pick\": \"blue_cube\", \"place\": \"pink_plate\"}]}",
+        "final": [
+          {
+            "pick": "yellow_cube",
+            "place": "table",
+            "auto": true
+          },
+          {
+            "pick": "blue_cube",
+            "place": "pink_plate"
+          }
+        ],
+        "notes": [
+          "[修正] 上のyellow_cubeを一旦テーブルに退避する手順を追加"
+        ],
+        "raw_correct": false,
+        "final_correct": true,
+        "latency": 14.122583389282227
+      },
+      {
+        "instruction": "積んだ2つのブロックを、両方ともピンクのお皿に移して",
+        "raw": "{\"interpretation\": \"積んだ2つのブロック=青の立方体と黄色の立方体, ピンクのお皿=ピンクのお皿\", \"reply\": \"青と黄色のブロックをピンクのお皿に移します。\", \"steps\": [{\"pick\": \"blue_cube\", \"place\": \"pink_plate\"}, {\"pick\": \"yellow_cube\", \"place\": \"pink_plate\"}]}",
+        "final": [
+          {
+            "pick": "yellow_cube",
+            "place": "pink_plate"
+          },
+          {
+            "pick": "blue_cube",
+            "place": "pink_plate"
+          }
+        ],
+        "notes": [
+          "[修正] 上のyellow_cubeを先に動かすよう順序を入れ替え"
+        ],
+        "raw_correct": false,
+        "final_correct": true,
+        "latency": 19.63917303085327
+      },
+      {
+        "instruction": "テーブルに残っているものを全部ピンクのお皿に片付けて",
+        "raw": "{\"interpretation\": \"テーブルに残っているもの=緑の円柱, 青の立方体(上に黄色の立方体が載っている)\", \"reply\": \"残りの2つをピンクのお皿に片付けます。\", \"steps\": [{\"pick\": \"green_cylinder\", \"place\": \"pink_plate\"}, {\"pick\": \"blue_cube\", \"place\": \"pink_plate\"}]}",
+        "final": [
+          {
+            "pick": "green_cylinder",
+            "place": "pink_plate"
+          },
+          {
+            "pick": "yellow_cube",
+            "place": "table",
+            "auto": true
+          },
+          {
+            "pick": "blue_cube",
+            "place": "pink_plate"
+          }
+        ],
+        "notes": [
+          "[修正] 上のyellow_cubeを一旦テーブルに退避する手順を追加"
+        ],
+        "raw_correct": false,
+        "final_correct": false,
+        "latency": 19.754090547561646
+      }
+    ],
+    "raw_acc": 0.8,
+    "final_acc": 0.9333333333333333,
+    "median_latency": 16.044081926345825
+  },
+  "qwen2.5-1.5b-instruct-q4_k_m.gguf": {
+    "rows": [
+      {
+        "instruction": "赤いブロックを青いお皿に置いて",
+        "raw": "{\"interpretation\": \"赤いブロック=赤の立方体, 青いお皿=青の立方体\", \"reply\": \"赤いブロックを青いお皿に置きます。\", \"steps\": [{\"pick\": \"red_cube\", \"place\": \"blue_plate\"}]}",
+        "final": [
+          {
+            "pick": "red_cube",
+            "place": "blue_plate"
+          }
+        ],
+        "notes": [],
+        "raw_correct": true,
+        "final_correct": true,
+        "latency": 31.64539647102356
+      },
+      {
+        "instruction": "トマトみたいな色のブロックを、空の色のお皿にのせて",
+        "raw": "{\"interpretation\": \"トマトみたいな色のブロック=青の立方体, 空の色のお皿=青のお皿\", \"reply\": \"青のブロックを青のお皿に積みます。\", \"steps\": [{\"pick\": \"blue_cube\", \"place\": \"blue_plate\"}]}",
+        "final": [
+          {
+            "pick": "blue_cube",
+            "place": "blue_plate"
+          }
+        ],
+        "notes": [],
+        "raw_correct": false,
+        "final_correct": false,
+        "latency": 10.980931520462036
+      },
+      {
+        "instruction": "バナナ色のブロックを、青い四角の上に積んで",
+        "raw": "{\"interpretation\": \"バナナ色のブロック=青の立方体, 青い四角の上に積む=青の立方体の上に積む\", \"reply\": \"青の立方体を青の四角の上に積みます。\", \"steps\": [{\"pick\": \"blue_cube\", \"place\": \"blue_plate\"}]}",
+        "final": [
+          {
+            "pick": "blue_cube",
+            "place": "blue_plate"
+          }
+        ],
+        "notes": [],
+        "raw_correct": false,
+        "final_correct": false,
+        "latency": 12.760075092315674
+      },
+      {
+        "instruction": "丸いのをピンクのお皿へ",
+        "raw": "{\"interpretation\": \"丸いの=緑の円柱\", \"reply\": \"丸いのをピンクのお皿に積みます。\", \"steps\": [{\"pick\": \"green_cylinder\", \"place\": \"pink_plate\"}]}",
+        "final": [
+          {
+            "pick": "green_cylinder",
+            "place": "pink_plate"
+          }
+        ],
+        "notes": [],
+        "raw_correct": true,
+        "final_correct": true,
+        "latency": 7.681472063064575
+      },
+      {
+        "instruction": "四角いブロックを全部ピンクのお皿に片付けて",
+        "raw": "{\"interpretation\": \"四角いブロック=青の立方体, ピンクのお皿=ピンクのお皿\", \"reply\": \"青のブロックをピンクのお皿に片付けます。\", \"steps\": [{\"pick\": \"blue_cube\", \"place\": \"pink_plate\"}]}",
+        "final": [
+          {
+            "pick": "blue_cube",
+            "place": "pink_plate"
+          }
+        ],
+        "notes": [],
+        "raw_correct": false,
+        "final_correct": false,
+        "latency": 9.983693599700928
+      },
+      {
+        "instruction": "青いブロックを同じ色のお皿に置いて",
+        "raw": "{\"interpretation\": \"青いブロック=青の立方体\", \"reply\": \"青いブロックを青のお皿に置きます。\", \"steps\": [{\"pick\": \"blue_cube\", \"place\": \"blue_plate\"}]}",
+        "final": [
+          {
+            "pick": "blue_cube",
+            "place": "blue_plate"
+          }
+        ],
+        "notes": [],
+        "raw_correct": true,
+        "final_correct": true,
+        "latency": 7.239343881607056
+      },
+      {
+        "instruction": "緑のブロックの上に赤いのを重ねて",
+        "raw": "{\"interpretation\": \"緑のブロック=緑の円柱, 紅いの=赤の立方体\", \"reply\": \"緑のブロックの上に赤いブロックを積みます。\", \"steps\": [{\"pick\": \"green_cylinder\", \"place\": \"red_cube\"}]}",
+        "final": [
+          {
+            "pick": "green_cylinder",
+            "place": "red_cube"
+          }
+        ],
+        "notes": [],
+        "raw_correct": false,
+        "final_correct": false,
+        "latency": 10.51089096069336
+      },
+      {
+        "instruction": "ダンスして",
+        "raw": "{\"interpretation\": \"ダンスする=ピック&プレースではない\", \"reply\": \"ごめんなさい、物を運ぶことしかできません。\", \"steps\": []}",
+        "final": [],
+        "notes": [],
+        "raw_correct": true,
+        "final_correct": true,
+        "latency": 7.787692546844482
+      },
+      {
+        "instruction": "コーヒーを入れて",
+        "raw": "{\"interpretation\": \"コーヒーを入れる=ピック&プレースではない\", \"reply\": \"ごめんなさい、物を運ぶことしかできません。\", \"steps\": []}",
+        "final": [],
+        "notes": [],
+        "raw_correct": true,
+        "final_correct": true,
+        "latency": 6.9259278774261475
+      },
+      {
+        "instruction": "トマトみたいな色のブロックを、空の色のお皿にのせて",
+        "raw": "{\"interpretation\": \"トマトみたいな色のブロック=青の立方体, 空の色のお皿=青のお皿\", \"reply\": \"青のブロックを青のお皿に積みます。\", \"steps\": [{\"pick\": \"blue_cube\", \"place\": \"blue_plate\"}]}",
+        "final": [
+          {
+            "pick": "yellow_cube",
+            "place": "table",
+            "auto": true
+          },
+          {
+            "pick": "blue_cube",
+            "place": "blue_plate"
+          }
+        ],
+        "notes": [
+          "[修正] 上のyellow_cubeを一旦テーブルに退避する手順を追加"
+        ],
+        "raw_correct": false,
+        "final_correct": false,
+        "latency": 479.7758424282074
+      },
+      {
+        "instruction": "丸いのをピンクのお皿へ",
+        "raw": "{\"interpretation\": \"丸いの=緑の円柱のブロック\", \"reply\": \"緑の円柱のブロックをピンクのお皿に積みます。\", \"steps\": [{\"pick\": \"green_cylinder\", \"place\": \"pink_plate\"}]}",
+        "final": [
+          {
+            "pick": "green_cylinder",
+            "place": "pink_plate"
+          }
+        ],
+        "notes": [],
+        "raw_correct": true,
+        "final_correct": true,
+        "latency": 11.029285430908203
+      },
+      {
+        "instruction": "丸いのをピンクのお皿へ",
+        "raw": "{\"interpretation\": \"丸いの=緑の円柱のブロック\", \"reply\": \"緑の円柱をピンクのお皿に積みます。\", \"steps\": [{\"pick\": \"green_cylinder\", \"place\": \"pink_plate\"}]}",
+        "final": [
+          {
+            "pick": "green_cylinder",
+            "place": "pink_plate"
+          }
+        ],
+        "notes": [],
+        "raw_correct": true,
+        "final_correct": true,
+        "latency": 12.945167541503906
+      },
+      {
+        "instruction": "青いブロックもピンクのお皿へ",
+        "raw": "{\"interpretation\": \"青いブロック=青の立方体, ピンクのお皿=ピンクのお皿\", \"reply\": \"青いブロックをピンクのお皿に積みます。\", \"steps\": [{\"pick\": \"blue_cube\", \"place\": \"pink_plate\"}]}",
+        "final": [
+          {
+            "pick": "yellow_cube",
+            "place": "table",
+            "auto": true
+          },
+          {
+            "pick": "blue_cube",
+            "place": "pink_plate"
+          }
+        ],
+        "notes": [
+          "[修正] 上のyellow_cubeを一旦テーブルに退避する手順を追加"
+        ],
+        "raw_correct": false,
+        "final_correct": true,
+        "latency": 10.160571575164795
+      },
+      {
+        "instruction": "積んだ2つのブロックを、両方ともピンクのお皿に移して",
+        "raw": "{\"interpretation\": \"積んだ2つのブロック=青の立方体と黄色の立方体\", \"reply\": \"積んだ2つのブロックをピンクのお皿に移します。\", \"steps\": [{\"pick\": \"blue_cube\", \"place\": \"pink_plate\"}, {\"pick\": \"yellow_cube\", \"place\": \"pink_plate\"}]}",
+        "final": [
+          {
+            "pick": "yellow_cube",
+            "place": "pink_plate"
+          },
+          {
+            "pick": "blue_cube",
+            "place": "pink_plate"
+          }
+        ],
+        "notes": [
+          "[修正] 上のyellow_cubeを先に動かすよう順序を入れ替え"
+        ],
+        "raw_correct": false,
+        "final_correct": true,
+        "latency": 14.773786783218384
+      },
+      {
+        "instruction": "テーブルに残っているものを全部ピンクのお皿に片付けて",
+        "raw": "{\"interpretation\": \"テーブルに残っているもの=青の立方体と黄色の立方体(青は青のお皿の上), ピンクのお皿=ピンクのお皿\", \"reply\": \"残りの2つをピンクのお皿に片付けます。\", \"steps\": [{\"pick\": \"blue_cube\", \"place\": \"pink_plate\"}, {\"pick\": \"yellow_cube\", \"place\": \"pink_plate\"}]}",
+        "final": [
+          {
+            "pick": "yellow_cube",
+            "place": "pink_plate"
+          },
+          {
+            "pick": "blue_cube",
+            "place": "pink_plate"
+          }
+        ],
+        "notes": [
+          "[修正] 上のyellow_cubeを先に動かすよう順序を入れ替え"
+        ],
+        "raw_correct": false,
+        "final_correct": false,
+        "latency": 15.936370849609375
+      }
+    ],
+    "raw_acc": 0.4666666666666667,
+    "final_acc": 0.6,
+    "median_latency": 10.980931520462036
+  }
+}

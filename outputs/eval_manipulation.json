@@ -1,0 +1,456 @@
+{
+  "summary": {
+    "trials": 20,
+    "step_success_rate": 0.9833333333333333,
+    "by_type": {
+      "plate_1": 1.0,
+      "plate_2": 1.0,
+      "stack": 0.95
+    },
+    "perception_err_mm_mean": 0.3398205126978292,
+    "perception_err_mm_max": 0.6910493647723329,
+    "wall_time_s": 314.7778708934784
+  },
+  "rows": [
+    {
+      "trial": 0,
+      "task": [
+        [
+          "yellow_cube",
+          "blue_plate"
+        ],
+        [
+          "green_cylinder",
+          "pink_plate"
+        ],
+        [
+          "blue_cube",
+          "red_cube"
+        ]
+      ],
+      "success": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "trial": 1,
+      "task": [
+        [
+          "green_cylinder",
+          "blue_plate"
+        ],
+        [
+          "red_cube",
+          "pink_plate"
+        ],
+        [
+          "blue_cube",
+          "yellow_cube"
+        ]
+      ],
+      "success": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "trial": 2,
+      "task": [
+        [
+          "yellow_cube",
+          "blue_plate"
+        ],
+        [
+          "blue_cube",
+          "pink_plate"
+        ],
+        [
+          "green_cylinder",
+          "red_cube"
+        ]
+      ],
+      "success": [
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "trial": 3,
+      "task": [
+        [
+          "green_cylinder",
+          "blue_plate"
+        ],
+        [
+          "red_cube",
+          "pink_plate"
+        ],
+        [
+          "yellow_cube",
+          "blue_cube"
+        ]
+      ],
+      "success": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "trial": 4,
+      "task": [
+        [
+          "green_cylinder",
+          "blue_plate"
+        ],
+        [
+          "yellow_cube",
+          "pink_plate"
+        ],
+        [
+          "blue_cube",
+          "red_cube"
+        ]
+      ],
+      "success": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "trial": 5,
+      "task": [
+        [
+          "green_cylinder",
+          "blue_plate"
+        ],
+        [
+          "yellow_cube",
+          "pink_plate"
+        ],
+        [
+          "red_cube",
+          "blue_cube"
+        ]
+      ],
+      "success": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "trial": 6,
+      "task": [
+        [
+          "yellow_cube",
+          "blue_plate"
+        ],
+        [
+          "blue_cube",
+          "pink_plate"
+        ],
+        [
+          "green_cylinder",
+          "red_cube"
+        ]
+      ],
+      "success": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "trial": 7,
+      "task": [
+        [
+          "yellow_cube",
+          "blue_plate"
+        ],
+        [
+          "blue_cube",
+          "pink_plate"
+        ],
+        [
+          "red_cube",
+          "green_cylinder"
+        ]
+      ],
+      "success": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "trial": 8,
+      "task": [
+        [
+          "red_cube",
+          "blue_plate"
+        ],
+        [
+          "yellow_cube",
+          "pink_plate"
+        ],
+        [
+          "blue_cube",
+          "green_cylinder"
+        ]
+      ],
+      "success": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "trial": 9,
+      "task": [
+        [
+          "green_cylinder",
+          "blue_plate"
+        ],
+        [
+          "yellow_cube",
+          "pink_plate"
+        ],
+        [
+          "blue_cube",
+          "red_cube"
+        ]
+      ],
+      "success": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "trial": 10,
+      "task": [
+        [
+          "red_cube",
+          "blue_plate"
+        ],
+        [
+          "green_cylinder",
+          "pink_plate"
+        ],
+        [
+          "yellow_cube",
+          "blue_cube"
+        ]
+      ],
+      "success": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "trial": 11,
+      "task": [
+        [
+          "blue_cube",
+          "blue_plate"
+        ],
+        [
+          "green_cylinder",
+          "pink_plate"
+        ],
+        [
+          "red_cube",
+          "yellow_cube"
+        ]
+      ],
+      "success": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "trial": 12,
+      "task": [
+        [
+          "blue_cube",
+          "blue_plate"
+        ],
+        [
+          "red_cube",
+          "pink_plate"
+        ],
+        [
+          "green_cylinder",
+          "yellow_cube"
+        ]
+      ],
+      "success": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "trial": 13,
+      "task": [
+        [
+          "green_cylinder",
+          "blue_plate"
+        ],
+        [
+          "yellow_cube",
+          "pink_plate"
+        ],
+        [
+          "red_cube",
+          "blue_cube"
+        ]
+      ],
+      "success": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "trial": 14,
+      "task": [
+        [
+          "red_cube",
+          "blue_plate"
+        ],
+        [
+          "yellow_cube",
+          "pink_plate"
+        ],
+        [
+          "green_cylinder",
+          "blue_cube"
+        ]
+      ],
+      "success": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "trial": 15,
+      "task": [
+        [
+          "red_cube",
+          "blue_plate"
+        ],
+        [
+          "blue_cube",
+          "pink_plate"
+        ],
+        [
+          "yellow_cube",
+          "green_cylinder"
+        ]
+      ],
+      "success": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "trial": 16,
+      "task": [
+        [
+          "blue_cube",
+          "blue_plate"
+        ],
+        [
+          "yellow_cube",
+          "pink_plate"
+        ],
+        [
+          "green_cylinder",
+          "red_cube"
+        ]
+      ],
+      "success": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "trial": 17,
+      "task": [
+        [
+          "green_cylinder",
+          "blue_plate"
+        ],
+        [
+          "blue_cube",
+          "pink_plate"
+        ],
+        [
+          "yellow_cube",
+          "red_cube"
+        ]
+      ],
+      "success": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "trial": 18,
+      "task": [
+        [
+          "blue_cube",
+          "blue_plate"
+        ],
+        [
+          "yellow_cube",
+          "pink_plate"
+        ],
+        [
+          "red_cube",
+          "green_cylinder"
+        ]
+      ],
+      "success": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "trial": 19,
+      "task": [
+        [
+          "red_cube",
+          "blue_plate"
+        ],
+        [
+          "yellow_cube",
+          "pink_plate"
+        ],
+        [
+          "blue_cube",
+          "green_cylinder"
+        ]
+      ],
+      "success": [
+        true,
+        true,
+        true
+      ]
+    }
+  ]
+}
